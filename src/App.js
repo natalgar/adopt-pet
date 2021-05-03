@@ -1,3 +1,4 @@
+import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom';
 import SearchParams from './SearchParams';
 
@@ -11,6 +12,8 @@ const App = () => {
 };
 
 ReactDOM.render(
-  <App />,
+  <StrictMode>
+    <App />
+  </StrictMode>,
   document.getElementById('root') // where to stamp
 );
